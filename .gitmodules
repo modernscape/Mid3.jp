@@ -1,3 +1,6 @@
 [submodule "projects/sphere"]
 	path = projects/sphere
 	url = https://github.com/modernscape/sphere.git
+[submodule "projects/sphere_distortion"]
+	path = projects/sphere_distortion
+	url = https://github.com/modernscape/sphere_distortion.git
