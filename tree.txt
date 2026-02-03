@@ -1,0 +1,35 @@
+src
+└── app
+    ├── favicon.ico
+    ├── globals.css
+    ├── layout.tsx
+    ├── page.tsx
+    └── sphere
+        └── page.tsx
+public
+└── contents
+    └── sphere
+        ├── data
+        │   └── data.json
+        ├── hdr
+        │   ├── autumn_field_puresky_4k.hdr
+        │   ├── kloofendal_48d_partly_cloudy_puresky_4k.hdr
+        │   └── kloppenheim_06_puresky_4k.hdr
+        └── model
+            └── 24-11-10_sphere.glb
+projects
+└── sphere
+    ├── animation
+    │   └── type.ts
+    ├── components
+    │   ├── Lights.tsx
+    │   ├── Model.tsx
+    │   └── Scene.tsx
+    ├── index.tsx
+    ├── lib
+    │   ├── applySoftMorph.ts
+    │   └── loadCenters.ts
+    └── types
+        └── center.ts
+
+15 directories, 18 files
