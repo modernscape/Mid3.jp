@@ -1,4 +1,5 @@
-import SphereProject from "@projects/sphere"
+// import SphereProject from "@projects/sphere"
+import SphereProject from "../../../projects/sphere"
 
 export default function Page() {
   return <SphereProject />
