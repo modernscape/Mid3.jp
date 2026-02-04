@@ -1,23 +1,23 @@
-// src/app/page.tsx
-import {redirect} from "next/navigation"
+"use client"
 
-export const dynamic = "force-dynamic"
+import {Suspense, useState} from "react"
+import dynamic from "next/dynamic"
 
-// export default function Home() {
-//   const projects = ["/sphere", "/sphere_distortion"]
-//   const randomIndex = Math.floor(Math.random() * projects.length)
-//   const selectedPath = projects[randomIndex]
-
-//   redirect(selectedPath)
-// }
-
-const works = [
-  "/sphere", //
-  "/sphere_distortion",
-  "/twilight",
-]
+const Sphere = dynamic(() => import("@/projects/sphere"), {ssr: false})
+const Distortion = dynamic(() => import("@/projects/sphere_distortion"), {ssr: false})
+const TwilightEmbed = dynamic(() => import("./twilight/page"), {ssr: false})
 
 export default function Home() {
-  const target = works[Math.floor(Math.random() * works.length)]
-  redirect(target)
+  const pages = [Sphere, Distortion, TwilightEmbed]
+
+  const [Page] = useState(() => {
+    const index = Math.floor(Math.random() * pages.length)
+    return pages[index]
+  })
+
+  return (
+    <Suspense fallback={null}>
+      <Page />
+    </Suspense>
+  )
 }
