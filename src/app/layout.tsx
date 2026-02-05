@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "breakthroughworks.jp",
-  description: "breakthroughworks.jp",
+  title: "mid3.jp",
+  description: "mid3.jp",
 }
 
 export default function RootLayout({
