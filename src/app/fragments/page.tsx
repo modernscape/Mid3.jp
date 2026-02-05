@@ -3,7 +3,7 @@
 export default function FragmentsEmbed() {
   return (
     <iframe
-      src="http://btw.cloudfree.jp/pages/fragments/"
+      src="https://modernscape.github.io/Mid3_fragments/o"
       style={{
         width: "100vw",
         height: "100vh",
