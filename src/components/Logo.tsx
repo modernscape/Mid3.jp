@@ -91,7 +91,7 @@ const FloatingLogo = () => {
             y="55%"
             dominantBaseline="middle"
             textAnchor="middle"
-            fontSize="14"
+            fontSize="15"
             fill="black"
             fontWeight="bold"
             style={{userSelect: "none", pointerEvents: "none"}}
