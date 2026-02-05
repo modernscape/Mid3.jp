@@ -8,7 +8,13 @@ const Distortion = dynamic(() => import("@/projects/sphere_distortion"), {ssr: f
 const TwilightEmbed = dynamic(() => import("./twilight/page"), {ssr: false})
 
 export default function Home() {
-  const pages = [Sphere, Distortion, TwilightEmbed]
+  const pages = [
+    Sphere, //
+    Sphere,
+    Distortion,
+    Distortion,
+    TwilightEmbed,
+  ]
 
   const [Page] = useState(() => {
     const index = Math.floor(Math.random() * pages.length)
