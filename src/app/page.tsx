@@ -3,30 +3,26 @@
 import {Suspense, useState} from "react"
 import dynamic from "next/dynamic"
 
-const Sphere = dynamic(() => import("@/projects/sphere"), {ssr: false})
-const Distortion = dynamic(() => import("@/projects/sphere_distortion"), {ssr: false})
-const TwilightEmbed = dynamic(() => import("./twilight/page"), {ssr: false})
-const FragmentsEmbed = dynamic(() => import("./fragments/page"), {ssr: false})
-const ImgeToPointsEmbed = dynamic(() => import("./imgeToPoints/page"), {ssr: false})
+const PAGE_PATHS = [
+  "@/projects/sphere", //
+  "@/projects/sphere_distortion",
+  "./twilight/page",
+  "./fragments/page",
+  "./imgeToPoints/page",
+]
 
 export default function Home() {
-  const pages = [
-    Sphere, //
-    Distortion,
-    TwilightEmbed,
-    FragmentsEmbed,
-    ImgeToPointsEmbed,
-    ImgeToPointsEmbed,
-  ]
+  const [RandomPage] = useState(() => {
+    // ランダムにパスを選択
+    const randomPath = PAGE_PATHS[Math.floor(Math.random() * PAGE_PATHS.length)]
 
-  const [Page] = useState(() => {
-    const index = Math.floor(Math.random() * pages.length)
-    return pages[index]
+    // 選択されたパスだけを dynamic インポート
+    return dynamic(() => import(`${randomPath}`), {ssr: false})
   })
 
   return (
     <Suspense fallback={null}>
-      <Page />
+      <RandomPage />
     </Suspense>
   )
 }
