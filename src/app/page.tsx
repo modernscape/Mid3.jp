@@ -7,8 +7,8 @@ import dynamic from "next/dynamic"
 const importers = [
   // () => import("@/projects/sphere"),
   // () => import("@/projects/sphere_distortion"),
-  () => import("../../projects/sphere"),
-  () => import("../../projects/sphere_distortion"),
+  () => import("../../projects/sphere/index"),
+  () => import("../../projects/sphere_distortion/index"),
   () => import("./twilight/page"),
   () => import("./fragments/page"),
   () => import("./fragments/page"),
