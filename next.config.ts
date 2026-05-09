@@ -1,8 +1,8 @@
-import type {NextConfig} from "next"
+import type { NextConfig } from "next"
 
 const nextConfig: NextConfig = {
   reactCompiler: true,
-  transpilePackages: ["projects/sphere", "projects/sphere_distortion"],
+  transpilePackages: ["works_react/sphere", "works_react/sphere_distortion"],
 
   async rewrites() {
     return [

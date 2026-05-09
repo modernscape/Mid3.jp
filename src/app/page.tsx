@@ -5,10 +5,10 @@ import dynamic from "next/dynamic"
 
 // 1. インポート関数をそのまま配列にする（これなら波線は出ません）
 const importers = [
-  () => import("@/projects/sphere"),
-  () => import("@/projects/sphere_distortion"),
-  // () => import("../../projects/sphere/index"),
-  // () => import("../../projects/sphere_distortion/index"),
+  () => import("@/works_react/sphere"),
+  () => import("@/works_react/sphere_distortion"),
+  // () => import("../../works_react/sphere/index"),
+  // () => import("../../works_react/sphere_distortion/index"),
   () => import("./twilight/page"),
   () => import("./fragments/page"),
   () => import("./fragments/page"),

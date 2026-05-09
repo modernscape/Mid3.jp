@@ -1,6 +1,6 @@
-[submodule "projects/sphere"]
-	path = projects/sphere
+[submodule "works_react/sphere"]
+	path = works_react/sphere
 	url = https://github.com/modernscape/sphere.git
-[submodule "projects/sphere_distortion"]
-	path = projects/sphere_distortion
+[submodule "works_react/sphere_distortion"]
+	path = works_react/sphere_distortion
 	url = https://github.com/modernscape/sphere_distortion.git
