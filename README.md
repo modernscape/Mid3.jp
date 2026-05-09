@@ -1,7 +1,8 @@
 ## タスク
 
-pages → works_native
+projects → works_native
 pages → works_embeded
+new_practice
 
 ## ルール
 
