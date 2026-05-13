@@ -18,6 +18,7 @@ const importers = [
   () => import("./morphGrid/page"),
   () => import("./sphere_explosion/page"),
   () => import("./fragment_09/page"),
+  () => import("./fragment_09/page"),
 ]
 
 // 2. mapで一括してdynamicコンポーネントに変換
