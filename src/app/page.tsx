@@ -19,7 +19,7 @@ const importers = [
   () => import("./sphere_explosion/page"),
   () => import("./fragment_09/page"),
   () => import("./fragment_09/page"),
-  () => import("./chocolat/page"),
+  // () => import("./chocolat/page"),
 ]
 
 // 2. mapで一括してdynamicコンポーネントに変換
