@@ -56,3 +56,8 @@ body,
   width: 100vw;
   height: 100vh;
 } */
+
+/* body に hide-logo クラスが付いたときだけ、中の #logo を消す */
+body.hide-logo #logo {
+  display: none !important;
+}
