@@ -7,6 +7,7 @@ import dynamic from "next/dynamic"
 const importers = [
   () => import("@/works_react/sphere"),
   () => import("@/works_react/sphere_distortion"),
+  () => import("@/works_react/glass-fracture_blender"),
   // () => import("../../works_react/sphere/index"),
   // () => import("../../works_react/sphere_distortion/index"),
   () => import("./twilight/page"),
