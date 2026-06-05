@@ -2,7 +2,11 @@ import type { NextConfig } from "next"
 
 const nextConfig: NextConfig = {
   reactCompiler: true,
-  transpilePackages: ["works_react/sphere", "works_react/sphere_distortion"],
+  transpilePackages: [
+    "works_react/sphere",
+    "works_react/sphere_distortion",
+    "works_react/glass-fracture_blender",
+  ],
 
   async rewrites() {
     return [
