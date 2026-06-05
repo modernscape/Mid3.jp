@@ -4,3 +4,6 @@
 [submodule "works_react/sphere_distortion"]
 	path = works_react/sphere_distortion
 	url = https://github.com/modernscape/sphere_distortion.git
+[submodule "works_react/glass-fracture_blender"]
+	path = works_react/glass-fracture_blender
+	url = https://github.com/modernscape/26-06-02_glass-fracture_blender.git
