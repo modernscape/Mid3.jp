@@ -46,12 +46,20 @@ const FloatingLogo = () => {
 
     // 戻る位置を設定
     setPosition({ x: 20, y: 30 })
-    // 戻る時に 1回転（360度）して 0 に戻るように設定
-    setRotation(rotation + 760)
 
-    if (moveCount.current < 5) {
+    // if (moveCount.current < 5) {
+    //   setTimeout(() => {
+    //     handleLogoClick(e)
+    //   }, 1000)
+    //   // return
+    // }
+
+    // 戻る時に 1回転（360度）して 0 に戻るように設定
+    setRotation(rotation + 360 * 3 - (rotation % 360))
+
+    setTimeout(() => {
       handleLogoClick(e)
-    }
+    }, 1200)
   }
 
   const handleLogoClick = (e: React.BaseSyntheticEvent) => {
